@@ -30,7 +30,7 @@ function delReuse(mergeArray, collection) {
 }
 
 function judgeSame(mergeArray, flag) {
-  for (var i = 0; i < m.length; i++) {
+  for (var i = 0; i < mergeArray.length; i++) {
     if (mergeArray[i] === flag) {
       return 0;
     }
