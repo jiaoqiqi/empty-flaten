@@ -4,11 +4,12 @@ function double_to_one(collection) {
 
   var mergeArray = bulildMergeArray(collection);
 
-  return mergeArray
+  return mergeArray;
 
 }
 
 function bulildMergeArray(collection) {
+
   var mergeArray = [];
 
   for (var i = 0; i < collection.length; i++) {
@@ -32,11 +33,11 @@ function delReuse(mergeArray, collection) {
 function judgeSame(mergeArray, flag) {
   for (var i = 0; i < mergeArray.length; i++) {
     if (mergeArray[i] === flag) {
-      return 0;
+      return false;
     }
   }
 
-  return 1;
+  return true;
 }
 
 module.exports = double_to_one;
